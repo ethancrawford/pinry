@@ -212,7 +212,7 @@ export default {
           this.filters.boardUsername,
           this.status.offset,
         );
-      } else if (this.filters.boardNameContains) {
+      } else if (this.filters.boardNameContains != null) {
         promise = API.Board.fetchListWhichContains(
           this.filters.boardNameContains,
           this.status.offset,
